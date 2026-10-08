@@ -15,6 +15,8 @@ exports.LoginPage = class LoginPage {
     await this.passwordInput.fill(password);
     await this.clickLogin.click();
     //asfgsfdfsdr
-
+    //wsrfgbawQW
+ ////BJHIIII
+ 
    }
 };
