@@ -9,6 +9,7 @@ const {Checkout1} = require('../src/pages/Checkout1');
 const {Checkout2} = require('../src/pages/Checkout2');
 const{CheckoutComplete} = require('../src/pages/CheckoutComplete.js');
 const{About} = require('../src/pages/About.js');
+const{PDP} = require('../src/pages/PDP.js');
 const testdata = require('../src/testdata/data.js');
 // 1. IMPORT the tool first
 //const { readCsv } = require('../src/utils/csv-reader');
@@ -28,6 +29,7 @@ const checkout1 = new Checkout1(page);
 const checkout2 = new Checkout2(page);
 const checkoutComplete = new CheckoutComplete(page);
 const about = new About(page);
+const pdp = new PDP(page);
 //4. Method Calling
 await loginPage.openPage();
 await loginPage.doLogin(testdata.user1.username, testdata.user1.password,testdata.clickLogin);
@@ -47,7 +49,16 @@ await homePage.openAbout();
 // await homePage.gobackPrevPage();
 await about.goBackBtn();
 await homePage.closeMenu();
+await homePage.productCard2Select();
+
 await page.waitForTimeout(1000);
+
+await pdp.clickAddToCartBtn();
+await pdp.clickOnCart();
+await page.waitForTimeout(1000);
+await cartPage.openCartPage();
+await checkout1.OpencheckoutPage2(row.firstName, row.lastName, row.zipCode);
+await checkout2.opencheckout2o();
 //await homePage.openSidebarMenu(testdata.clickCross);
 
 //Screenshot:

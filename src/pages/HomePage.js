@@ -10,7 +10,8 @@ constructor(page){
     this.clickDynamicCatalog = page.getByRole('button',{name : 'Dynamic Catalog'}); 
     this.clickAbout = page.getByRole('link',{name : 'About'});
     this.clickCross = page.getByRole('button',{name : 'Close Menu'});
-    this.productCard2 = page.getByText('Sauce Labs Bolt T-Shirt');
+    this.productCard2 = page.getByText('Sauce Labs Bolt T-Shirt',{exact:true});
+    
 }
 
 
@@ -36,7 +37,7 @@ await this.clickAbout.click();
     await this.clickCross.click();
  }
  async productCard2Select(){
-    await this.click();
+    await this.productCard2.click();
  }
 // async gobackPrevPage() {
 //     await this.page.goback();
