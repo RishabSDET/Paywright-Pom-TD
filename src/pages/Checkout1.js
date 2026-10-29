@@ -14,6 +14,12 @@ exports.Checkout1 = class Checkout1
             await this.zipCode.fill(zipCode);
             await this.continueBtn.click();
     }
+async OpencheckoutPage2(firstName, lastName, zipCode){
+    await this.firstName.fill(firstName);
+    await this.lastName.fill(lastName);
+    await this.zipCode.fill(zipCode);
+    await this.continueBtn.click();
+}
 
 
 };

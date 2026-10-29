@@ -13,5 +13,10 @@
     "firstName": "Alex",
     "lastName": "Smith",
     "zipCode": "V6B 1A1"
+  },
+   {
+    "firstName": "Lola",
+    "lastName": "Olala",
+    "zipCode": "V6B 1V7"
   }
 ]

@@ -12,4 +12,8 @@ exports.Checkout2 = class Checkout2
        await expect(this.checkTotalPrice).toBeVisible();
        await this.finishBtn.click();
     }
+
+    async opencheckout2o(){
+        await this.finishBtn.click();
+    }
 }
