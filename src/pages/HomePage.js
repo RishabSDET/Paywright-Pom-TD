@@ -11,7 +11,7 @@ constructor(page){
     this.clickAbout = page.getByRole('link',{name : 'About'});
     this.clickCross = page.getByRole('button',{name : 'Close Menu'});
     this.productCard2 = page.getByText('Sauce Labs Bolt T-Shirt',{exact:true});
-    
+    this.productCard3 = page.getByText('Test.allTheThings() T-Shirt (Red)',{exact:true});
 }
 
 
@@ -42,4 +42,7 @@ await this.clickAbout.click();
 // async gobackPrevPage() {
 //     await this.page.goback();
 // }
+async productCard3Select(){
+    await this.productCard3.click();
+}
 };
