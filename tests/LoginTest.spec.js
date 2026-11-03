@@ -59,6 +59,12 @@ await page.waitForTimeout(1000);
 await cartPage.openCartPage();
 await checkout1.OpencheckoutPage2(row.firstName, row.lastName, row.zipCode);
 await checkout2.opencheckout2o();
+await checkoutComplete.checkoutMessage();
+
+await homePage.productCard3Select();
+
+await pdp.clickAddToCartBtn();
+//await pdp.clickOnCart();
 //await homePage.openSidebarMenu(testdata.clickCross);
 
 //Screenshot:
