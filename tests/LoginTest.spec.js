@@ -64,6 +64,8 @@ await checkoutComplete.checkoutMessage();
 await homePage.productCard3Select();
 
 await pdp.clickAddToCartBtn();
+await pdp.clickOnCart();
+await checkout1.contShopping();
 //await pdp.clickOnCart();
 //await homePage.openSidebarMenu(testdata.clickCross);
 
