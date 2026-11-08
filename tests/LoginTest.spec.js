@@ -71,6 +71,7 @@ await checkout1.OpencheckoutPage2(row.firstName, row.lastName, row.zipCode);
 await checkout2.opencheckout2o();
 //teststet
 //DOneDeviDone
+//sf
 //await this.GeneratePDF.click();
 
 //await pdp.clickOnCart();
