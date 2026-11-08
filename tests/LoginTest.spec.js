@@ -69,6 +69,7 @@ await cartPage.openCartPage();
 await checkout1.OpencheckoutPage2(row.firstName, row.lastName, row.zipCode);
 //await checkout1.contShopping();
 await checkout2.opencheckout2o();
+//
 
 //await this.GeneratePDF.click();
 
