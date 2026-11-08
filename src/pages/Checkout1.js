@@ -6,6 +6,7 @@ exports.Checkout1 = class Checkout1
         this.lastName = page.getByRole('textbox',{name:'Last Name'});
         this.zipCode = page.getByRole('textbox',{name: 'Zip/Postal Code'});
         this.continueBtn = page.getByRole('button',{name: 'Continue'});
+        this.continueShoppingBtn = page.getByText('Continue Shopping');
 
     }
     async OpencheckoutPage(firstName, lastName, zipCode){
@@ -19,6 +20,9 @@ async OpencheckoutPage2(firstName, lastName, zipCode){
     await this.lastName.fill(lastName);
     await this.zipCode.fill(zipCode);
     await this.continueBtn.click();
+}
+async contShopping(){
+    await this.continueShoppingBtn.click();
 }
 
 

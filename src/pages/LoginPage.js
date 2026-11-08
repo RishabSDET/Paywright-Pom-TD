@@ -14,6 +14,8 @@ exports.LoginPage = class LoginPage {
     await this.usernameInput.fill(username);
     await this.passwordInput.fill(password);
     await this.clickLogin.click();
+    //await this.opencheckout2o.click();
+    //await this.checkoutMessage.click();
     //asfgsfdfsdr
     //wsrfgbawQW
  ////BJHIIII
