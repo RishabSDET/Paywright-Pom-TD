@@ -74,6 +74,8 @@ await checkout2.opencheckout2o();
 //sf
 //await this.GeneratePDF.click();
 
+///dgfhjgmhggfdfsdghnbmb
+
 //await pdp.clickOnCart();
 //await homePage.openSidebarMenu(testdata.clickCross);
 
