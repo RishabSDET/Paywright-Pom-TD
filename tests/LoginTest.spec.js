@@ -70,7 +70,7 @@ await checkout1.OpencheckoutPage2(row.firstName, row.lastName, row.zipCode);
 //await checkout1.contShopping();
 await checkout2.opencheckout2o();
 //teststet
-
+//DOneDeviDone
 //await this.GeneratePDF.click();
 
 //await pdp.clickOnCart();
