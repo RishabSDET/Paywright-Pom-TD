@@ -65,7 +65,13 @@ await homePage.productCard3Select();
 
 await pdp.clickAddToCartBtn();
 await pdp.clickOnCart();
-await checkout1.contShopping();
+await cartPage.openCartPage(); 
+await checkout1.OpencheckoutPage2(row.firstName, row.lastName, row.zipCode);
+//await checkout1.contShopping();
+await checkout2.opencheckout2o();
+
+//await this.GeneratePDF.click();
+
 //await pdp.clickOnCart();
 //await homePage.openSidebarMenu(testdata.clickCross);
 

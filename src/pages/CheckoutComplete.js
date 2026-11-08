@@ -10,8 +10,11 @@ exports.CheckoutComplete = class CheckoutComplete
     }
     async checkoutMessage(){
         await expect(this.thankyoumessage).toBeVisible();
-        await this.generatePDFOrder.click();
         await this.backtoHome.click();
+
+    }
+    async GeneratePDF(){
+    await this.generatePDFOrder.click();
 
     }
 }
