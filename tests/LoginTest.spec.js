@@ -10,6 +10,7 @@ const {Checkout2} = require('../src/pages/Checkout2');
 const{CheckoutComplete} = require('../src/pages/CheckoutComplete.js');
 const{About} = require('../src/pages/About.js');
 const{PDP} = require('../src/pages/PDP.js');
+const{Spinner} = require('../src/pages/Spinner.js');
 const testdata = require('../src/testdata/data.js');
 // 1. IMPORT the tool first
 //const { readCsv } = require('../src/utils/csv-reader');
@@ -30,6 +31,7 @@ const checkout2 = new Checkout2(page);
 const checkoutComplete = new CheckoutComplete(page);
 const about = new About(page);
 const pdp = new PDP(page);
+const spinner = new Spinner(page);
 //4. Method Calling
 await loginPage.openPage();
 await loginPage.doLogin(testdata.user1.username, testdata.user1.password,testdata.clickLogin);
@@ -69,6 +71,12 @@ await cartPage.openCartPage();
 await checkout1.OpencheckoutPage2(row.firstName, row.lastName, row.zipCode);
 //await checkout1.contShopping();
 await checkout2.opencheckout2o();
+await checkoutComplete.GeneratePDF();
+await checkoutComplete.checkoutMessage();
+await homePage.openthesideMenu();
+await homePage.clickonDynamicCatalog();
+await homePage.clickontheSpinner();
+await spinner.clickonProductCart();
 //teststet
 //DOneDeviDone
 //sf

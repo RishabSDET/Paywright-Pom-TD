@@ -6,12 +6,16 @@ constructor(page){
     this.addtocart = page.locator('#add-to-cart-sauce-labs-backpack');
     this.minicartclick = page.locator('.shopping_cart_link');
     this.openMenu = page.getByRole('button',{name : 'Open Menu'});
+    this.opentheMenu = page.getByRole('button',{name:'Open Menu'});
     this.clickAllitems = page.getByRole('button',{name : 'All Items'})
     this.clickDynamicCatalog = page.getByRole('button',{name : 'Dynamic Catalog'}); 
+    this.clicktheDynamicCatalog = page.getByRole('button',{name : 'Dynamic Catalog'});
     this.clickAbout = page.getByRole('link',{name : 'About'});
     this.clickCross = page.getByRole('button',{name : 'Close Menu'});
     this.productCard2 = page.getByText('Sauce Labs Bolt T-Shirt',{exact:true});
     this.productCard3 = page.getByText('Test.allTheThings() T-Shirt (Red)',{exact:true});
+    this.spinnerLink   = page.getByText('Spinner',{exact:true});
+    
 }
 
 
@@ -44,5 +48,14 @@ await this.clickAbout.click();
 // }
 async productCard3Select(){
     await this.productCard3.click();
+}
+async openthesideMenu(){
+   await this.opentheMenu.click();
+}
+async clickonDynamicCatalog(){
+    await this.clicktheDynamicCatalog.click();
+}
+async clickontheSpinner(){
+    await this.spinnerLink.click();
 }
 };
